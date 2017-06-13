@@ -1,0 +1,36 @@
+{
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "com.mway.bluerange.toolbox",
+    "tns-ios": {
+      "version": "3.0.1"
+    }
+  },
+  "dependencies": {
+    "@angular/animations": "~4.1.0",
+    "@angular/common": "~4.1.0",
+    "@angular/compiler": "~4.1.0",
+    "@angular/core": "~4.1.0",
+    "@angular/forms": "~4.1.0",
+    "@angular/http": "~4.1.0",
+    "@angular/platform-browser": "~4.1.0",
+    "@angular/router": "~4.1.0",
+    "angular-pipes": "^6.5.2",
+    "nativescript-angular": "~3.0.0",
+    "nativescript-cardview": "^2.0.1",
+    "nativescript-telerik-ui": "^2.0.1",
+    "nativescript-theme-core": "^1.0.4",
+    "reflect-metadata": "~0.1.8",
+    "rxjs": "~5.3.0",
+    "tns-core-modules": "~3.0.0",
+    "zone.js": "~0.8.2"
+  },
+  "devDependencies": {
+    "nativescript-dev-sass": "^1.1.1",
+    "nativescript-dev-typescript": "~0.4.0",
+    "typescript": "~2.2.1"
+  }
+}

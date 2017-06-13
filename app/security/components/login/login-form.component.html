@@ -1,0 +1,28 @@
+<FlexboxLayout flexDirection="column" class="login-card" alignSelf="center" justifyContent="center">
+  <CardView class="blackCard" elevation="20" margin="10" id="batCard">
+    <GridLayout rows="200, auto, auto, 100" columns="auto, auto, *, 100">
+      <Image src="~/assets/images/icon-black.png" row="0" height="200" stretch="aspectFit"  class="img-rounded p-l-15 p-r-15 p-t-15"></Image>
+      <StackLayout class="form">
+        <StackLayout class="input-field" margin="10" colSpan="3" row="1">
+          <Label text="Username" class="label font-weight-bold m-b-5"></Label>
+          <TextField #shadowItem #userName="ngModel" [(ngModel)]="form.userName" class="input" required></TextField>
+          <StackLayout class="hr-light"></StackLayout>
+        </StackLayout>
+        <StackLayout class="input-field" margin="10" colSpan="3" row="2">
+          <Label text="Password" class="label font-weight-bold m-b-5"></Label>
+          <TextField #shadowItem #password="ngModel" secure="true" [(ngModel)]="form.password" class="input" required></TextField>
+          <StackLayout class="hr-light"></StackLayout>
+        </StackLayout>
+        <StackLayout class="input-field" margin="10" colSpan="3" row="3">
+          <StackLayout *ngIf="userName.errors && (userName.dirty || userName.touched)">
+            <Label *ngIf="userName.errors.required" text="- An Username is required -"></Label>
+          </StackLayout>
+          <StackLayout *ngIf="password.errors && (password.dirty || password.touched)">
+            <Label *ngIf="password.errors.required" text="- A password is required -"></Label>
+          </StackLayout>
+        </StackLayout>
+      </StackLayout>
+    </GridLayout>
+  </CardView>
+  <FabButton (submit)="submit($event)" [icon]="fabIcon" className="lnr" ></FabButton>
+</FlexboxLayout>

@@ -1,0 +1,61 @@
+// Import the theme’s variables. If you’re using a color scheme
+// other than “light”, switch the path to the alternative scheme,
+// for example '~nativescript-theme-core/scss/dark'.
+@import '~nativescript-theme-core/scss/dark';
+
+// Customize any of the theme’s variables here, for instance $btn-color: red;
+@import './shared/variables';
+
+// Import the theme’s main ruleset.
+@import '~nativescript-theme-core/scss/index';
+
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+.lnr {
+   font-family: 'Linearicons-Free';
+   font-size: 48;
+}
+
+ActionBar {
+  background-color: #000;
+  color: white;
+}
+
+button {
+  font-size: 15;
+  horizontal-align: center;
+}
+
+.drawerContentText {
+  font-size: 13;
+  padding: 10;
+}
+
+.drawerContentButton {
+  margin: 10;
+  horizontal-align: left;
+}
+
+.sideStackLayout {
+  background-color: $white;
+  // height: 100%;
+  // display: flex;
+  // align-self: stretch;
+}
+
+.sideTitleStackLayout {
+  min-height: 100%;
+  text-align: center;
+  vertical-align: center;
+}
+
+.sideLabel {
+  padding: 10;
+  color: $sky;
+  .active {
+    background-color: $grey-background;
+  }
+}
+.main-menu{
+  background: white;
+}

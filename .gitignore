@@ -1,0 +1,10 @@
+/platforms
+/node_modules
+/app/*.js
+!/karma.conf.js
+!/app/tests/*.js
+/*.d.ts
+!/references.d.ts
+/lib
+/platforms
+/node_modules
